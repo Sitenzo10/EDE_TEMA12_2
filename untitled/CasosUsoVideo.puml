@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor "Socio" as S1
+:Bibliotecario:
+rectangle Biblioteca{
+usecase (reservar libro)
+(prestar libro)
+(devolver libro)
+(actualizar código)
+}
+ S1-- (reservar libro)
+ S1-- (prestar libro)
+ S1-- (devolver libro)
+:Bibliotecario: -- (reservar libro)
+Bibliotecario -- (actualizar código)
+@enduml

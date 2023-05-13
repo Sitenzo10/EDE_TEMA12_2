@@ -22,5 +22,9 @@ left to right direction
 (solicitar info adicional\nal cliente)
 "agente" ..>(evaluar\nSolicitud de credito)
 (solicitar info adicional\nal cliente)..>(evaluar\nSolicitud de credito):<<extend>>
-
+@enduml
+@startuml
+left to right direction
+Bibliotecario -->(baja socio)
+(baja socio) ..> (buscar socio):<<include>>
 @enduml

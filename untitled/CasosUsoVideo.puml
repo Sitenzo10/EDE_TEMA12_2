@@ -14,3 +14,13 @@ usecase (reservar libro)
 :Bibliotecario: -- (reservar libro)
 Bibliotecario -- (actualizar código)
 @enduml
+
+@startuml
+left to right direction
+"agente"
+(evaluar\nSolicitud de credito)
+(solicitar info adicional\nal cliente)
+"agente" ..>(evaluar\nSolicitud de credito)
+(solicitar info adicional\nal cliente)..>(evaluar\nSolicitud de credito):<<extend>>
+
+@enduml
